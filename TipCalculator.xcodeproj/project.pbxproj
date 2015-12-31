@@ -15,6 +15,13 @@
 		0238157E1C2F557000E96673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0238157C1C2F557000E96673 /* LaunchScreen.storyboard */; };
 		023815891C2F557000E96673 /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023815881C2F557000E96673 /* TipCalculatorTests.swift */; };
 		023815941C2F557000E96673 /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023815931C2F557000E96673 /* TipCalculatorUITests.swift */; };
+		023815A21C2F868800E96673 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023815A11C2F868800E96673 /* SettingsViewController.swift */; };
+		66CE3B211C33830A00A0749C /* Light_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE3B201C33830A00A0749C /* Light_Theme.png */; };
+		66CE3B231C338D3500A0749C /* Dark_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE3B221C338D3500A0749C /* Dark_Theme.png */; };
+		66CE3B251C338DEA00A0749C /* Dark_Theme.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE3B241C338DEA00A0749C /* Dark_Theme.png */; };
+		66CE3B271C338E9600A0749C /* Dark_Theme2.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE3B261C338E9600A0749C /* Dark_Theme2.png */; };
+		66CE3B2A1C339C5800A0749C /* Light_Theme_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE3B281C339C5800A0749C /* Light_Theme_selected.png */; };
+		66CE3B2B1C339C5800A0749C /* Dark_Theme_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 66CE3B291C339C5800A0749C /* Dark_Theme_selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		0238158F1C2F557000E96673 /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		023815931C2F557000E96673 /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		023815951C2F557000E96673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		023815A11C2F868800E96673 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		66CE3B201C33830A00A0749C /* Light_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Theme.png; path = ../../../Light_Theme.png; sourceTree = "<group>"; };
+		66CE3B221C338D3500A0749C /* Dark_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Theme.png; path = ../../Dark_Theme.png; sourceTree = "<group>"; };
+		66CE3B241C338DEA00A0749C /* Dark_Theme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Theme.png; path = ../../../Dark_Theme.png; sourceTree = "<group>"; };
+		66CE3B261C338E9600A0749C /* Dark_Theme2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Theme2.png; path = ../../../Dark_Theme2.png; sourceTree = "<group>"; };
+		66CE3B281C339C5800A0749C /* Light_Theme_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Light_Theme_selected.png; path = ../../../Light_Theme_selected.png; sourceTree = "<group>"; };
+		66CE3B291C339C5800A0749C /* Dark_Theme_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dark_Theme_selected.png; path = ../../../Dark_Theme_selected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +93,7 @@
 		023815641C2F556F00E96673 = {
 			isa = PBXGroup;
 			children = (
+				66CE3B221C338D3500A0749C /* Dark_Theme.png */,
 				0238156F1C2F557000E96673 /* TipCalculator */,
 				023815871C2F557000E96673 /* TipCalculatorTests */,
 				023815921C2F557000E96673 /* TipCalculatorUITests */,
@@ -99,9 +114,15 @@
 		0238156F1C2F557000E96673 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				66CE3B281C339C5800A0749C /* Light_Theme_selected.png */,
+				66CE3B291C339C5800A0749C /* Dark_Theme_selected.png */,
+				66CE3B261C338E9600A0749C /* Dark_Theme2.png */,
+				66CE3B241C338DEA00A0749C /* Dark_Theme.png */,
+				66CE3B201C33830A00A0749C /* Light_Theme.png */,
 				023815701C2F557000E96673 /* AppDelegate.swift */,
 				023815721C2F557000E96673 /* ViewController.swift */,
 				023815741C2F557000E96673 /* Main.storyboard */,
+				023815A11C2F868800E96673 /* SettingsViewController.swift */,
 				0238157A1C2F557000E96673 /* Assets.xcassets */,
 				0238157C1C2F557000E96673 /* LaunchScreen.storyboard */,
 				0238157F1C2F557000E96673 /* Info.plist */,
@@ -196,6 +217,7 @@
 				TargetAttributes = {
 					0238156C1C2F557000E96673 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2DL59C4T3K;
 					};
 					023815831C2F557000E96673 = {
 						CreatedOnToolsVersion = 7.2;
@@ -232,7 +254,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CE3B231C338D3500A0749C /* Dark_Theme.png in Resources */,
+				66CE3B271C338E9600A0749C /* Dark_Theme2.png in Resources */,
+				66CE3B251C338DEA00A0749C /* Dark_Theme.png in Resources */,
+				66CE3B211C33830A00A0749C /* Light_Theme.png in Resources */,
+				66CE3B2B1C339C5800A0749C /* Dark_Theme_selected.png in Resources */,
 				0238157E1C2F557000E96673 /* LaunchScreen.storyboard in Resources */,
+				66CE3B2A1C339C5800A0749C /* Light_Theme_selected.png in Resources */,
 				0238157B1C2F557000E96673 /* Assets.xcassets in Resources */,
 				023815761C2F557000E96673 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +290,7 @@
 				023815791C2F557000E96673 /* TipCalculator.xcdatamodeld in Sources */,
 				023815731C2F557000E96673 /* ViewController.swift in Sources */,
 				023815711C2F557000E96673 /* AppDelegate.swift in Sources */,
+				023815A21C2F868800E96673 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +430,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SagarAli.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +445,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TipCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SagarAli.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -486,6 +523,7 @@
 				0238159A1C2F557000E96673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0238159B1C2F557000E96673 /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +532,7 @@
 				0238159D1C2F557000E96673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0238159E1C2F557000E96673 /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +541,7 @@
 				023815A01C2F557000E96673 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

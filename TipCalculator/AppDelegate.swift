@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TipCalculator
 //
-//  Created by Anica Ali on 12/26/15.
+//  Created by Sagar Ali on 12/26/15.
 //  Copyright © 2015 Sagar Ali. All rights reserved.
 //
 
@@ -36,11 +36,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+         let timestamp = NSUserDefaults.standardUserDefaults()
+        let terminationTime = timestamp.objectForKey("terminateTime")
+        
+        if(terminationTime != nil)
+        {
+     let refreshTime = terminationTime!.dateByAddingTimeInterval(600)
+        
+        let currentTime = NSDate()
+        let tipSeg = NSUserDefaults.standardUserDefaults()
+        
+        if(currentTime.timeIntervalSinceReferenceDate > refreshTime.timeIntervalSinceReferenceDate)
+        {
+            let billFieldText = NSUserDefaults.standardUserDefaults()
+            billFieldText.setObject("", forKey: "billField")
+            
+            tipSeg.setBool(false, forKey: "current")
+            
+        }
+        else
+        {
+            
+            tipSeg.setBool(true, forKey: "current")
+        }
+        }
+        
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
+        
+        let terminateTime = NSDate()
+       let timestamp = NSUserDefaults.standardUserDefaults()
+        timestamp.setObject(terminateTime, forKey: "terminateTime")
+        timestamp.synchronize()
         self.saveContext()
     }
 
